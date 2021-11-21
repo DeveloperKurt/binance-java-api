@@ -1,3 +1,9 @@
+# What's Different Than The Original Repository
+
+* A release have been created, meaning, you can import the project without having to install it to you local Maven repository. The installation section have been updated accordingly. 
+* I will be improving the project in the future according to my needs that might arise.
+
+
 # Java Binance API
 
 binance-java-api is a lightweight Java library for interacting with the [Binance API](https://developers.binance.com/docs/api/scopes), providing complete API coverage, and supporting synchronous and asynchronous requests, as well as event streaming using WebSockets.
@@ -7,12 +13,19 @@ binance-java-api is a lightweight Java library for interacting with the [Binance
 * Support for User Data, Trade, Kline, and Depth event streaming using [Binance WebSocket API](https://www.binance.com/restapipub.html#wss-endpoint).
 
 ## Installation
-1. Install library into your Maven's local repository by running `mvn install`
+1. Add the following repository to your project's `pom.xml`:
+```
+ <repository>
+     <id>jitpack.io</id>
+     <url>https://jitpack.io</url>
+</repository>
+```
+
 2. Add the following Maven dependency to your project's `pom.xml`:
 ```
 <dependency>
-  <groupId>com.binance.api</groupId>
-  <artifactId>binance-api-client</artifactId>
+  <groupId>com.github.DeveloperKurt</groupId>
+  <artifactId>binance-java-api</artifactId>
   <version>1.0.0</version>
 </dependency>
 ```
